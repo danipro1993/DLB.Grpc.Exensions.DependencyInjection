@@ -1,9 +1,6 @@
-﻿using Grpc.Core;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -23,8 +20,15 @@ namespace DLB.Grpc.Extensions.DependencyInjection.HostedServices
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
-            _logger.LogInformation("Starting grpc server...");
-            await _grpcServer.StartAsync();
+            try
+            {
+                _logger.LogInformation("Starting grpc server...");
+                await _grpcServer.StartAsync();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Error initializing grpc server");
+            }            
         }
 
         public async Task StopAsync(CancellationToken cancellationToken)

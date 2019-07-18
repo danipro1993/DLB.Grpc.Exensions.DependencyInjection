@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/danipro1993/DLB.Grpc.Exensions.DependencyInjection</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <Copyright>DLB.Grpc</Copyright>
+    <PackageProjectUrl>https://github.com/danipro1993/DLB.Grpc.Exensions.DependencyInjection</PackageProjectUrl>
+    <Description>Grpc server implementation for AspNetCore 2+</Description>
+    <PackageLicenseUrl>https://github.com/danipro1993/DLB.Grpc.Exensions.DependencyInjection</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>

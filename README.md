@@ -1,5 +1,5 @@
 # DLB.Grpc.Exensions.DependencyInjection
-Extensions method to use grpc in asp net core 2.2
+Extensions method to use grpc in asp net core 2.2 with ServiceCollection
 
 ### Installation
 

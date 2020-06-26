@@ -3,7 +3,7 @@ Extensions method to use grpc in asp net core 2.2 with ServiceCollection
 
 ### Installation
 
-DLB.Grpc.Exensions.DependencyInjection is a extensible library to use grpc in net core 2+. allows you to add in an easy way grpc server with many services.
+DLB.Grpc.Exensions.DependencyInjection is an extensible library to use groups in net core 2+. allows you to add in an easy way groups server with many services.
 
 
 ### Usage
@@ -24,4 +24,4 @@ services.AddGrpc(config =>
             .AddGrpcService<QueryServiceImpl>(svc => QueryService.BindService(svc));
 ```
 
-Now, you already have a grpc server listening in 127.0.0.1:50001 with two services. In the cliente only need reference to proto files, generate cs (or other) files and use it
+Now, you already have a grpc server listening in 127.0.0.1:50001 with two services. In the client only need a reference to proto files, generate Cs (or other) files and use it
